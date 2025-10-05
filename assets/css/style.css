@@ -71,3 +71,73 @@ body.transition-leave #transition{opacity:1;pointer-events:auto}
 @media (max-width:600px){
   .cards{grid-template-columns:1fr}
 }
+
+/* ===== FIX DEFINITIVO: LIGHT COM CONTRASTE CERTO ===== */
+
+/* Fundo e texto globais */
+:root[data-theme="light"] html,
+:root[data-theme="light"] body{
+  background:#f7f9fc !important;
+  color:#0f141d !important;
+}
+
+/* Header / navbar */
+:root[data-theme="light"] .topbar{
+  background:#ffffff !important;
+  border-bottom:1px solid #e2e8f0 !important;
+}
+:root[data-theme="light"] .brand,
+:root[data-theme="light"] .links a,
+:root[data-theme="light"] .lang button,
+:root[data-theme="light"] .icon-btn{
+  color:#0f141d !important;
+}
+:root[data-theme="light"] .lang,
+:root[data-theme="light"] .icon-btn{
+  border-color:#e2e8f0 !important;
+}
+
+/* Cartões, rodapé e overlay de transição */
+:root[data-theme="light"] .card{
+  background:#ffffff !important;
+  border-color:#e2e8f0 !important;
+}
+:root[data-theme="light"] .footer{
+  color:#475569 !important;
+  border-top-color:#e2e8f0 !important;
+}
+:root[data-theme="light"] #transition{
+  background:#f7f9fc !important;
+}
+
+/* Botões */
+:root[data-theme="light"] .btn{
+  background:#ffffff !important;
+  color:#0f141d !important;
+  border-color:#e2e8f0 !important;
+}
+:root[data-theme="light"] .btn.ghost{
+  background:transparent !important;
+  color:#0f141d !important;
+  border-color:#e2e8f0 !important;
+}
+:root[data-theme="light"] .btn.primary{
+  background:var(--brand) !important;
+  color:#0b1220 !important;
+  border-color:transparent !important;
+}
+
+/* Badges / chips */
+:root[data-theme="light"] .badge{
+  background:#eef2f7 !important;
+  color:#0f141d !important;
+  border-color:#e2e8f0 !important;
+}
+
+/* Campos de formulário */
+:root[data-theme="light"] .form input,
+:root[data-theme="light"] .form textarea{
+  background:#ffffff !important;
+  color:#0f141d !important;
+  border-color:#e2e8f0 !important;
+}
