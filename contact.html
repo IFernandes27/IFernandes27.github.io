@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <title>Contacto — Inácio Fernandes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script defer src="assets/js/app.js"></script>
+
+</head>
+<body data-page="contact">
+
+  <header class="topbar slide-down">
+    <div class="container nav">
+      <a class="brand" href="index.html">Inácio Afonso Pires Fernandes</a>
+      <nav class="links">
+        <a data-i18n="nav.about" href="about.html">Sobre</a>
+        <a data-i18n="nav.projects" href="projects.html">Projetos</a>
+        <a data-i18n="nav.experience" href="experience.html">Experiência</a>
+        <a data-i18n="nav.contact" href="contact.html">Contacto</a>
+
+        <a class="btn ghost" href="cv/EN-INACIO-FERNANDES-04-2025.pdf" download>📄 <span data-i18n="nav.cv">Baixar CV</span></a>
+
+        <div class="lang">
+          <button id="btn-pt" data-lang="pt">PT</button>
+          <button id="btn-en" data-lang="en">EN</button>
+        </div>
+
+        <button id="themeToggle" class="icon-btn" aria-label="Mudar tema">
+          <span class="sun" aria-hidden="true">☀️</span>
+          <span class="moon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="transition" aria-hidden="true"></div>
+  <main class="container pad">
+    <h1 class="reveal-up" data-i18n="contact.title">Contacto</h1>
+    <section class="grid-2">
+      <article class="card reveal-up">
+        <div class="body">
+          <p>📧 <a href="mailto:inaciopiresfernandes@gmail.com">inaciopiresfernandes@gmail.com</a></p>
+          <p>🔗 <a href="http://linkedin.com/in/in%C3%A1cio-afonso-fernandes-62569b1a3" target="_blank" rel="noopener">LinkedIn</a></p>
+          <p>💻 <a href="https://github.com/IFernandes27" target="_blank" rel="noopener">GitHub @IFernandes27</a></p>
+          <p class="muted">Rio de Mouro, Portugal</p>
+        </div>
+      </article>
+      <article class="card reveal-up delay-1">
+        <div class="body">
+          <h3 data-i18n="contact.form.title">Enviar mensagem</h3>
+          <form id="contactForm" class="form" novalidate>
+            <label for="name" data-i18n="contact.form.name">Nome</label>
+            <input id="name" name="name" required placeholder="O teu nome" />
+            <label for="email" data-i18n="contact.form.email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="teu@email.com" />
+            <label for="message" data-i18n="contact.form.message">Mensagem</label>
+            <textarea id="message" name="message" required placeholder="Como posso ajudar?"></textarea>
+            <button class="btn primary" type="submit" data-i18n="contact.form.send">Enviar</button>
+            <p id="status" class="muted" aria-live="polite"></p>
+          </form>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer fade-in">
+    <div class="container">
+      <small>© <span id="year"></span> <span class="brand-min">Inácio Afonso Pires Fernandes</span> · <span data-i18n="footer">Feito com HTML + CSS + JS.</span></small>
+    </div>
+  </footer>
+
+</body>
+</html>

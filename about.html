@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <title>Sobre — Inácio Fernandes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script defer src="assets/js/app.js"></script>
+
+</head>
+<body data-page="about">
+
+  <header class="topbar slide-down">
+    <div class="container nav">
+      <a class="brand" href="index.html">Inácio Afonso Pires Fernandes</a>
+      <nav class="links">
+        <a data-i18n="nav.about" href="about.html">Sobre</a>
+        <a data-i18n="nav.projects" href="projects.html">Projetos</a>
+        <a data-i18n="nav.experience" href="experience.html">Experiência</a>
+        <a data-i18n="nav.contact" href="contact.html">Contacto</a>
+
+        <a class="btn ghost" href="cv/EN-INACIO-FERNANDES-04-2025.pdf" download>📄 <span data-i18n="nav.cv">Baixar CV</span></a>
+
+        <div class="lang">
+          <button id="btn-pt" data-lang="pt">PT</button>
+          <button id="btn-en" data-lang="en">EN</button>
+        </div>
+
+        <button id="themeToggle" class="icon-btn" aria-label="Mudar tema">
+          <span class="sun" aria-hidden="true">☀️</span>
+          <span class="moon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="transition" aria-hidden="true"></div>
+  <main class="container pad">
+    <h1 class="reveal-up" data-i18n="about.title">Sobre mim</h1>
+    <p class="lead reveal-up" data-i18n="about.lead">Licenciado e Mestre pelo IPB. Interessa-me desenvolvimento web/software, gestão de dados e IA.</p>
+    <section class="grid-2">
+      <article class="card reveal-up">
+        <div class="body">
+          <h3 data-i18n="about.skills.title">Competências técnicas</h3>
+          <div class="badges">
+            <span class="badge">PHP</span><span class="badge">Java</span><span class="badge">Kotlin</span>
+            <span class="badge">JavaScript</span><span class="badge">SQL</span><span class="badge">Python</span>
+            <span class="badge">TensorFlow</span><span class="badge">Keras</span><span class="badge">scikit-learn</span>
+            <span class="badge">Power BI</span><span class="badge">DAX</span>
+          </div>
+        </div>
+      </article>
+      <article class="card reveal-up delay-1">
+        <div class="body">
+          <h3 data-i18n="about.edu.title">Formação</h3>
+          <ul class="list">
+            <li data-i18n="about.edu.lic">Licenciatura em Gestão Informática — IPB (2017–2021)</li>
+            <li data-i18n="about.edu.mes">Mestrado em Informática — IPB (2021–2023)</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section class="card reveal-up delay-2" style="margin-top:16px;">
+      <div class="body">
+        <h3 data-i18n="about.stack.title">Stack (logos oficiais)</h3>
+        <div class="icons devicons">
+          <i class="devicon-php-plain colored"    title="PHP"></i>
+          <i class="devicon-mysql-plain colored"  title="MySQL"></i>
+          <i class="devicon-java-plain colored"   title="Java"></i>
+          <i class="devicon-kotlin-plain colored" title="Kotlin"></i>
+          <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+          <i class="devicon-python-plain colored" title="Python"></i>
+          <i class="devicon-tensorflow-original colored" title="TensorFlow"></i>
+          <i class="devicon-keras-plain colored"  title="Keras"></i>
+          <i class="devicon-scikitlearn-plain colored" title="Scikit-learn"></i>
+          <i class="devicon-powerbi-plain colored" title="Power BI"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer fade-in">
+    <div class="container">
+      <small>© <span id="year"></span> <span class="brand-min">Inácio Afonso Pires Fernandes</span> · <span data-i18n="footer">Feito com HTML + CSS + JS.</span></small>
+    </div>
+  </footer>
+
+</body>
+</html>

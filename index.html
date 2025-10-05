@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <title>Portfólio — Inácio Fernandes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script defer src="assets/js/app.js"></script>
+
+</head>
+<body data-page="home">
+
+  <header class="topbar slide-down">
+    <div class="container nav">
+      <a class="brand" href="index.html">Inácio Afonso Pires Fernandes</a>
+      <nav class="links">
+        <a data-i18n="nav.about" href="about.html">Sobre</a>
+        <a data-i18n="nav.projects" href="projects.html">Projetos</a>
+        <a data-i18n="nav.experience" href="experience.html">Experiência</a>
+        <a data-i18n="nav.contact" href="contact.html">Contacto</a>
+
+        <a class="btn ghost" href="cv/EN-INACIO-FERNANDES-04-2025.pdf" download>📄 <span data-i18n="nav.cv">Baixar CV</span></a>
+
+        <div class="lang">
+          <button id="btn-pt" data-lang="pt">PT</button>
+          <button id="btn-en" data-lang="en">EN</button>
+        </div>
+
+        <button id="themeToggle" class="icon-btn" aria-label="Mudar tema">
+          <span class="sun" aria-hidden="true">☀️</span>
+          <span class="moon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="transition" aria-hidden="true"></div>
+  <main class="container hero">
+    <div class="hero-left reveal-up">
+      <p class="kicker" data-i18n="home.role">Desenvolvedor Web & Sistemas de Informação</p>
+      <h1 data-i18n="home.title">Crio aplicações seguras e rápidas — PHP, Java e dados.</h1>
+      <p class="lead" data-i18n="home.lead">Do conceito ao deploy: código limpo, integração com base de dados e métricas acionáveis.</p>
+      <div class="cta-wrap">
+        <a class="btn primary" href="projects.html" data-i18n="home.cta.projects">Ver projetos</a>
+        <a class="btn ghost" href="contact.html" data-i18n="home.cta.contact">Falar comigo</a>
+      </div>
+      <div class="badges">
+        <span class="badge">PHP</span><span class="badge">Java</span><span class="badge">Kotlin</span>
+        <span class="badge">SQL</span><span class="badge">Power BI</span><span class="badge">Python</span>
+      </div>
+    </div>
+    <div class="hero-right reveal-up delay-1">
+      <div class="card hero-card">
+        <h3 data-i18n="home.card.title">O que entrego</h3>
+        <ul class="tick">
+          <li data-i18n="home.card.1">APIs e back-ends estáveis (PHP/MySQL)</li>
+          <li data-i18n="home.card.2">UI responsiva e acessível</li>
+          <li data-i18n="home.card.3">Dashboards e insights (Power BI)</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer fade-in">
+    <div class="container">
+      <small>© <span id="year"></span> <span class="brand-min">Inácio Afonso Pires Fernandes</span> · <span data-i18n="footer">Feito com HTML + CSS + JS.</span></small>
+    </div>
+  </footer>
+
+</body>
+</html>

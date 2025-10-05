@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <title>Experiência — Inácio Fernandes</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script defer src="assets/js/app.js"></script>
+
+</head>
+<body data-page="experience">
+
+  <header class="topbar slide-down">
+    <div class="container nav">
+      <a class="brand" href="index.html">Inácio Afonso Pires Fernandes</a>
+      <nav class="links">
+        <a data-i18n="nav.about" href="about.html">Sobre</a>
+        <a data-i18n="nav.projects" href="projects.html">Projetos</a>
+        <a data-i18n="nav.experience" href="experience.html">Experiência</a>
+        <a data-i18n="nav.contact" href="contact.html">Contacto</a>
+
+        <a class="btn ghost" href="cv/EN-INACIO-FERNANDES-04-2025.pdf" download>📄 <span data-i18n="nav.cv">Baixar CV</span></a>
+
+        <div class="lang">
+          <button id="btn-pt" data-lang="pt">PT</button>
+          <button id="btn-en" data-lang="en">EN</button>
+        </div>
+
+        <button id="themeToggle" class="icon-btn" aria-label="Mudar tema">
+          <span class="sun" aria-hidden="true">☀️</span>
+          <span class="moon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div id="transition" aria-hidden="true"></div>
+  <main class="container pad">
+    <h1 class="reveal-up" data-i18n="exp.title">Experiência</h1>
+    <section class="timeline">
+      <article class="card reveal-up">
+        <div class="body">
+          <h3>Call Center Assistant — Altice Portugal</h3>
+          <div class="muted">08/2023 — atual • Lisboa</div>
+          <ul class="list">
+            <li data-i18n="exp.altice.1">Apoio ao cliente em faturação</li>
+            <li data-i18n="exp.altice.2">Apoio em novos contratos</li>
+            <li data-i18n="exp.altice.3">Suporte técnico</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card reveal-up delay-1">
+        <div class="body">
+          <h3>Web Developer — Barbershop Project</h3>
+          <div class="muted">04/2022 — 06/2023 • Bragança</div>
+          <ul class="list">
+            <li data-i18n="exp.barber.1">Plataforma de marcações (UI/Admin)</li>
+            <li data-i18n="exp.barber.2">Integração com serviços e BD</li>
+            <li data-i18n="exp.barber.3">Boas práticas HTML/CSS/JS</li>
+          </ul>
+        </div>
+      </article>
+      <article class="card reveal-up delay-2">
+        <div class="body">
+          <h3>Software Developer — AirFast Project</h3>
+          <div class="muted">02/2023 — 04/2023 • Bragança</div>
+          <ul class="list">
+            <li data-i18n="exp.air.1">Análise de requisitos</li>
+            <li data-i18n="exp.air.2">Desenvolvimento em Kotlin</li>
+            <li data-i18n="exp.air.3">Integração com APIs/BD e testes</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer fade-in">
+    <div class="container">
+      <small>© <span id="year"></span> <span class="brand-min">Inácio Afonso Pires Fernandes</span> · <span data-i18n="footer">Feito com HTML + CSS + JS.</span></small>
+    </div>
+  </footer>
+
+</body>
+</html>
