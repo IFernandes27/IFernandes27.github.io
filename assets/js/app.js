@@ -147,3 +147,31 @@ document.addEventListener('DOMContentLoaded', ()=>{
   initContact();
   initPageTransitions();
 });
+
+
+(function initBackToTop(){
+  const btn = document.getElementById('backToTop');
+  if(!btn) return;
+  const onScroll = () => {
+    if (window.scrollY > 300) btn.classList.add('show');
+    else btn.classList.remove('show');
+  };
+  window.addEventListener('scroll', onScroll, { passive:true });
+  btn.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+  onScroll();
+})();
+
+(function initPageTransitions(){
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (a.target === '_blank' || a.hasAttribute('download') || href.startsWith('#')) return;
+    const url = new URL(a.href, location.href);
+    if (url.origin !== location.origin) return;
+    e.preventDefault();
+    document.body.classList.add('transition-leave');
+    setTimeout(() => { window.location.href = a.href; }, 300);
+  }, true);
+})();
+

@@ -1,20 +1,57 @@
 <!doctype html>
 <html lang="pt">
 <head>
-  <title>Sobre — Inácio Fernandes</title>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <script defer src="assets/js/app.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Sobre — Inácio Fernandes</title>
+<meta name="description" content="Sobre mim, formação e competências." />
+<link rel="canonical" href="https://ifernandes27.github.io/" />
+
+<!-- Favicon / Manifest -->
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- OpenGraph / Twitter -->
+<meta property="og:title" content="Portfólio — Inácio Fernandes" />
+<meta property="og:description" content="Portfólio de Inácio Fernandes — Desenvolvedor Web & Sistemas de Informação." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ifernandes27.github.io/" />
+<meta property="og:image" content="https://ifernandes27.github.io/assets/img/og.svg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Portfólio — Inácio Fernandes" />
+<meta name="twitter:description" content="Portfólio de Inácio Fernandes — Desenvolvedor Web & Sistemas de Informação." />
+<meta name="twitter:image" content="https://ifernandes27.github.io/assets/img/og.svg" />
+
+<!-- Performance + CSS/JS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/app.js"></script>
+
+<!-- Métricas (OPCIONAL: escolha 1) -->
+<!-- GoatCounter: troque REPLACE pelo seu subdomínio GoatCounter e descomente -->
+<!-- <script data-goatcounter="https://REPLACE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script> -->
+
+<!-- Google Analytics: troque G-XXXXXXXXXX e descomente -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
 
 </head>
 <body data-page="about">
 
   <header class="topbar slide-down">
+    <div id="transition" aria-hidden="true"></div>
+
     <div class="container nav">
       <a class="brand" href="index.html">Inácio Afonso Pires Fernandes</a>
       <nav class="links">
@@ -89,6 +126,9 @@
       <small>© <span id="year"></span> <span class="brand-min">Inácio Afonso Pires Fernandes</span> · <span data-i18n="footer">Feito com HTML + CSS + JS.</span></small>
     </div>
   </footer>
+
+  <button id="backToTop" aria-label="Voltar ao topo" title="Topo">↑</button>
+
 
 </body>
 </html>

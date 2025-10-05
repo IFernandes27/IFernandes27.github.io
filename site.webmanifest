@@ -1,0 +1,9 @@
+{
+  "name": "Inácio Afonso Pires Fernandes — Portfólio",
+  "short_name": "Portfólio IF",
+  "icons": [{ "src": "/assets/img/favicon.svg", "type": "image/svg+xml", "sizes": "any" }],
+  "theme_color": "#0f1115",
+  "background_color": "#0f1115",
+  "display": "standalone",
+  "start_url": "/"
+}
