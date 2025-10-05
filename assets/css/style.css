@@ -72,6 +72,51 @@ body.transition-leave #transition{opacity:1;pointer-events:auto}
   .cards{grid-template-columns:1fr}
 }
 
+/* ====== FIX VISIBILIDADE NO TEMA CLARO ====== */
+:root[data-theme="light"] body{ color:#0f141d; }
+:root[data-theme="light"] #transition{ background:#f7f9fc; }
+
+/* header claro */
+:root[data-theme="light"] .topbar{ background:#ffffff; border-bottom:1px solid #e2e8f0; }
+:root[data-theme="light"] .brand,
+:root[data-theme="light"] .links a{ color:#0f141d; opacity:1; }
+
+/* cartões e superfícies */
+:root[data-theme="light"] .card{ background:#ffffff; border-color:#e2e8f0; }
+:root[data-theme="light"] .footer{ color:#475569; border-top-color:#e2e8f0; }
+
+/* botões */
+:root[data-theme="light"] .btn{ 
+  background:#ffffff; 
+  color:#0f141d; 
+  border-color:#e2e8f0;
+}
+:root[data-theme="light"] .btn.ghost{
+  background:transparent;
+  color:#0f141d;
+  border-color:#e2e8f0;
+}
+:root[data-theme="light"] .btn.primary{
+  background:var(--brand);
+  color:#0b1220;
+  border-color:transparent;
+}
+
+/* chips/badges */
+:root[data-theme="light"] .badge{
+  background:#eef2f7;
+  color:#0f141d;
+  border-color:#e2e8f0;
+}
+
+/* campos de formulário */
+:root[data-theme="light"] .form input,
+:root[data-theme="light"] .form textarea{
+  background:#ffffff;
+  color:#0f141d;
+  border-color:#e2e8f0;
+}
+
 /* ===== FIX DEFINITIVO: LIGHT COM CONTRASTE CERTO ===== */
 
 /* Fundo e texto globais */
